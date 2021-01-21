@@ -9,7 +9,8 @@ on:
     paths:
       - 'rust/**'
       - '.github/workflows/rust**'
-
+  schedule:
+    - cron: '0 6 * * *'
 jobs:
   build:
 

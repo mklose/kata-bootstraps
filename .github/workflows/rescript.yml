@@ -9,7 +9,8 @@ on:
     paths:
       - 'rescript/**'
       - '.github/workflows/rescript**'
-
+  schedule:
+    - cron: '0 6 * * *'
 jobs:
 
   matrix_build:

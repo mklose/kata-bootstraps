@@ -10,6 +10,9 @@ on:
       - 'golang/**'
       - '.github/workflows/go**'
 
+  schedule:
+    - cron: '0 6 * * *'
+
 jobs:
 
   matrix_build:

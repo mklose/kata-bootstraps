@@ -10,6 +10,9 @@ on:
       - 'php/**'
       - '.github/workflows/php**'
 
+  schedule:
+    - cron: '0 6 * * *'
+
 jobs:
   run:
     runs-on: ${{ matrix.operating-system }}

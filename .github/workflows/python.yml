@@ -10,6 +10,8 @@ on:
       - 'python/**'
       - '.github/workflows/python**'
 
+  schedule:
+    - cron: '0 6 * * *'
 jobs:
   matrix_build:
     runs-on: ${{ matrix.operating-system }}

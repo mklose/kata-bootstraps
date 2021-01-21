@@ -11,6 +11,8 @@ on:
       - 'js/**'
       - '.github/workflows/js**'
 
+  schedule:
+    - cron: '0 6 * * *'
 jobs:
 
   matrix_build:

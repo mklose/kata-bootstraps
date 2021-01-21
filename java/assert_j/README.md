@@ -1,6 +1,6 @@
 # Java AssertJ
 
-Minimal setup with Java, [JUnit5](https://junit.org/junit5/) and [AssertJ](http://joel-costigliola.github.io/assertj/index.html) assertions to get you started.
+Minimal setup with Java, [JUnit5](https://junit.org/junit5/) and [AssertJ](https://assertj.github.io/doc/) assertions to get you started.
 
 You can use [gradle](https://gradle.org/) or [maven](https://maven.apache.org/)
 
@@ -16,9 +16,9 @@ Open as preexisting project in your favorite IDE and choose between gradle or ma
 To execute the tests either run `./gradlew test`, `mvn test` or run the tests from the IDE you are using
 
 ## Test Libraries Available from the Get-Go
-- JUnit 5.5.2
-- AssertJ 3.14.0
+- [JUnit 5.7.0](https://junit.org/junit5/docs/snapshot/release-notes/#release-notes-5.7.0)
+- [AssertJ 3.18.1](https://assertj.github.io/doc/#assertj-core-3-18-1-release-notes)
 
-This repo was tested with eclipse and idea, if you encounter problems please open a issue or send a pull request.
+This repo was tested with [idea](https://www.jetbrains.com/idea), if you encounter problems please open a issue or send a pull request.
 
 Have fun!

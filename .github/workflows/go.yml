@@ -38,7 +38,7 @@ jobs:
 
       - name: assure one failing test
         working-directory: golang/testify
-        run: "sh ../../.scripts/assure_failing_test.sh 'go test kata_test.go -v' 'Error Trace:	kata_test.go:9'"
+        run: "sh ../../.scripts/assure_failing_test.sh 'go test kata_test.go -v' 'TestFailing: kata_test.go:9'"
       #### END testify
 
       #### BEGIN testify test doubles

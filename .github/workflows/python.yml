@@ -52,7 +52,7 @@ jobs:
 
       - name: assure one failing test
         working-directory: python/pytest
-        run: "sh ../../.scripts/assure_failing_test.sh 'python -m pytest tests/test_thing_fixture.py' ''assert "Wrong!" == thing.return_hello_name()'
+        run: "sh ../../.scripts/assure_failing_test.sh 'python -m pytest tests/test_thing_fixture.py' 'assert "Wrong!" == thing.return_hello_name()'"
       #### END pytest
 
       #### BEGIN codewars
@@ -61,4 +61,19 @@ jobs:
         run: |
           pip install -r requirements.txt
           python tests/example.py
-    #### END pytest
+      #### END codewars
+
+    docker_build:
+      runs-on: ubuntu
+
+      steps:
+        - uses: actions/checkout@v1
+
+        #### BEGIN pytest
+        - name: docker pytest
+          working-directory: python/pytest
+          run: "sh ../../.scripts/assure_failing_test.sh './docker_test.sh' 'assert "Wrong!" == thing.return_hello_name()'"
+
+        #### END pytest
+
+

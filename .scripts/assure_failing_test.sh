@@ -24,8 +24,7 @@ TEMPFILE=`mktemp`
 FAILED="failed"
 (eval "$1" && echo okay || echo "$FAILED") | tee $TEMPFILE ; grep -F -- "$2" $TEMPFILE && (cat $TEMPFILE | tail -n1 | grep -q "$FAILED")
 
-if [ $? == 0 ]
-then
+if [ "$?" -eq 0 ]; then
   echo " "
   echo "${BOLD_GREEN}Successfully failed a test.${NO_COLOR}"
   exit 0

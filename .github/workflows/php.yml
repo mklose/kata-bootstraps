@@ -32,8 +32,8 @@ jobs:
           php-version: ${{ matrix.php-versions }}
           extensions: mbstring, intl #optional, setup extensions
           ini-values: post_max_size=256M, short_open_tag=On #optional, setup php.ini configuration
-            coverage: xdebug #optional, setup coverage driver
-            tools: php-cs-fixer, phpunit #optional, setup tools globally
+          coverage: xdebug #optional, setup coverage driver
+          tools: php-cs-fixer, phpunit #optional, setup tools globally
 
       - name: Install Dependencies
         working-directory: php

@@ -12,6 +12,7 @@ on:
 
   schedule:
     - cron: '0 6 * * *'
+
 jobs:
   matrix_build:
     runs-on: ${{ matrix.operating-system }}
@@ -52,7 +53,7 @@ jobs:
 
       - name: assure one failing test
         working-directory: python/pytest
-        run: "sh ../../.scripts/assure_failing_test.sh 'python -m pytest tests/test_thing_fixture.py' 'assert "Wrong!" == thing.return_hello_name()'"
+        run: "sh ../../.scripts/assure_failing_test.sh 'python -m pytest tests/test_thing_fixture.py' 'assert \"Wrong!\" == thing.return_hello_name()'"
       #### END pytest
 
       #### BEGIN codewars
@@ -72,7 +73,7 @@ jobs:
         #### BEGIN pytest
         - name: docker pytest
           working-directory: python/pytest
-          run: "sh ../../.scripts/assure_failing_test.sh './docker_test.sh' 'assert "Wrong!" == thing.return_hello_name()'"
+          run: "sh ../../.scripts/assure_failing_test.sh './docker_test.sh' 'assert \"Wrong!\" == thing.return_hello_name()'"
 
         #### END pytest
 

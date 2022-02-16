@@ -13,7 +13,7 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "gradle"
-    directory: "java/junit5/build.gradle"
+    directory: "java/junit5"
     schedule:
       interval: "weekly"
 #./java/hamcrest/build.gradle
@@ -29,7 +29,7 @@ updates:
 #./kotlin/kotlintest/build.gradle
 #./kotlin/spock/build.gradle
   - package-ecosystem: "maven"
-    directory: "java/junit5/pom.xml"
+    directory: "java/"
     schedule:
       interval: "weekly"
 
@@ -44,7 +44,7 @@ updates:
 #./kotlin/junit/pom.xml
 
   - package-ecosystem: "npm"
-    directory: "ts/typescript-jest/package.json"
+    directory: "ts/typescript-jest"
     schedule:
       interval: "weekly"
 

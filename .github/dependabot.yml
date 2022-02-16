@@ -13,21 +13,42 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "gradle"
-    directory: "java/**"
+    directory: "java/junit5/build.gradle"
+    schedule:
+      interval: "weekly"
+#./java/hamcrest/build.gradle
+#./java/jqwik/build.gradle
+#./java/junit5/build.gradle
+#./java/junit4/build.gradle
+#./java/truth/build.gradle
+#./java/fitnesse/myapp/build.gradle
+#./java/fitnesse/atests/build.gradle
+#./java/fitnesse/build.gradle
+#./java/hue4j5/build.gradle
+#./kotlin/spek/build.gradle
+#./kotlin/kotlintest/build.gradle
+#./kotlin/spock/build.gradle
+  - package-ecosystem: "maven"
+    directory: "java/junit5/pom.xml"
     schedule:
       interval: "weekly"
 
-  - package-ecosystem: "maven"
-    directory: "java/**"
-    schedule:
-      interval: "weekly"
+#./java/hamcrest/pom.xml
+#./java/jqwik/pom.xml
+#./java/cucumber/pom.xml
+#./java/junit5/pom.xml
+#./java/junit4/pom.xml
+#./java/truth/pom.xml
+#./java/spock/pom.xml
+#./java/hue4j5/pom.xml
+#./kotlin/junit/pom.xml
 
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "ts/typescript-jest/package.json"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "composer"
-    directory: "/"
+    directory: ""
     schedule:
       interval: "weekly"
